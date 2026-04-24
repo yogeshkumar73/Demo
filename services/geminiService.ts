@@ -1,7 +1,8 @@
 
 import { GoogleGenAI } from "@google/genai";
 
-// Fix: Initializing strictly according to guidelines using direct process.env.API_KEY reference
+// Fix: Initializing strictly according to guidelines using direct process.env.API_KEY reference 
+
 const ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
 
 export const getMarketInsights = async (symbols: string[]) => {
